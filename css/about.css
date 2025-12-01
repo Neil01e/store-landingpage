@@ -1,0 +1,41 @@
+.about-section {
+  padding: 60px 20px;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: lightslategrey;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: lightslategrey;
+}
+
+.about-image {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}

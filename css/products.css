@@ -1,0 +1,144 @@
+.product-section {
+  padding: 60px 20px;
+}
+
+.product-section h2 {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 40px;
+  color: lightslategrey;
+  letter-spacing: 2px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 35px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product-card {
+  background-color: transparent;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.03),
+    0 0 30px rgba(255, 255, 255, 0.02) inset;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.05),
+    0 0 40px rgba(255, 255, 255, 0.04) inset;
+}
+
+.gun-img {
+  width: 100%;
+  object-fit: contain;
+
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 20px;
+}
+
+.rifle-img {
+  height: 180px;
+}
+.smg-img {
+  height: 150px;
+}
+.shotgun-img {
+  height: 190px;
+}
+.sniper-img {
+  height: 200px;
+}
+.melee-img {
+  height: 140px;
+}
+
+.handgun-img {
+  height: 140px;
+  max-width: 160px;
+}
+
+#munitions .product-card {
+  background-color: transparent;
+  box-shadow: none;
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.03),
+    0 0 30px rgba(255, 255, 255, 0.02) inset;
+}
+
+#munitions .product-card img {
+  width: 100%;
+  height: 130px;
+  object-fit: contain;
+  padding: 4px;
+  border-radius: 8px;
+}
+
+#munitions .product-card h3 {
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+#munitions .product-card p {
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+
+#munitions .product-card button {
+  background-color: darkslategrey;
+  color: #fff;
+}
+
+#munitions .product-card button:hover {
+  background-color: #1a2b2b;
+  transform: translateY(-6px);
+  box-shadow: 0 8px 25px rgba(255, 255, 255, 0.05),
+    0 0 40px rgba(255, 255, 255, 0.04) inset;
+}
+
+.product-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.product-card p {
+  font-size: 0.95rem;
+  color: #ffffff;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.product-card button {
+  padding: 10px 22px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: darkslategrey;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.25s;
+}
+
+.product-card button:hover {
+  background-color: #1a2b2b;
+}
+
+@media (max-width: 768px) {
+  .gun-img {
+    height: auto;
+    max-height: 180px;
+  }
+}
